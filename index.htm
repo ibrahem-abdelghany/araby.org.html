@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +8,29 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Inter:wght@300;400;600;800&display=swap"
+        rel="stylesheet">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DMDK3YY0R6"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-DMDK3YY0R6');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-DMDK3YY0R6');
     </script>
 
     <style>
         :root {
-            --primary: #c5a059; /* Gold */
-            --secondary: #004d40; /* Deep Teal/Green */
-            --accent: #ff4d4d; /* For discount */
+            --primary: #c5a059;
+            /* Gold */
+            --secondary: #004d40;
+            /* Deep Teal/Green */
+            --accent: #ff4d4d;
+            /* For discount */
             --text-light: #f8f9fa;
             --glass: rgba(0, 0, 0, 0.6);
         }
@@ -79,7 +85,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.8) 100%);
+            background: radial-gradient(circle, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.8) 100%);
         }
 
         /* Glass Container */
@@ -98,8 +104,15 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         h1 {
@@ -160,9 +173,17 @@
         }
 
         @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
         }
 
         /* Pricing */
@@ -250,21 +271,47 @@
         }
 
         @media (max-width: 600px) {
-            h1 { font-size: 2.5rem; }
-            .new-price { font-size: 2.5rem; }
-            .timer-container { gap: 0.5rem; }
-            .timer-box { min-width: 60px; padding: 0.5rem; }
-            .timer-value { font-size: 1.5rem; }
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .new-price {
+                font-size: 2.5rem;
+            }
+
+            .timer-container {
+                gap: 0.5rem;
+            }
+
+            .timer-box {
+                min-width: 60px;
+                padding: 0.5rem;
+            }
+
+            .timer-value {
+                font-size: 1.5rem;
+            }
         }
     </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N5EMTCGSFL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-N5EMTCGSFL');
+    </script>
 </head>
+
 <body>
 
     <div class="background-slider">
         <div class="bg-image active" style="background-image: url('images/cityscape-dubai-fog-sunrise.jpg')"></div>
         <div class="bg-image" style="background-image: url('images/mall-dome-architecture-dubai.jpg')"></div>
         <div class="bg-image" style="background-image: url('images/desert-dubai-friends-arab.jpg')"></div>
-        <div class="bg-image" style="background-image: url('images/burj-al-arab-largest-hotel-in-dubai-tallest-hotel-dubai.jpg')"></div>
+        <div class="bg-image"
+            style="background-image: url('images/burj-al-arab-largest-hotel-in-dubai-tallest-hotel-dubai.jpg')"></div>
         <div class="bg-image" style="background-image: url('images/animal-camel-nature-mammal.jpg')"></div>
         <div class="overlay"></div>
     </div>
@@ -274,7 +321,7 @@
         <p class="tagline">The ultimate domain for Arabic business & culture</p>
 
         <div class="limited-offer">LIMITED TIME OFFER</div>
-        
+
         <div class="pricing">
             <span class="old-price">$4,500</span>
             <span class="new-price">$4,000<span class="currency">USD</span></span>
@@ -350,4 +397,5 @@
         setInterval(nextImage, 6000); // Change image every 6 seconds
     </script>
 </body>
+
 </html>
